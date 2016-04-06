@@ -11,9 +11,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ * å­¦ä¹ å®‰å“ æŒ‘æˆ˜é«˜è–ª
+ * @author Administrator
+ *
+ */
 public class MainActivity extends Activity {
 	private Button button;
-	private AlertDialog.Builder dialog;//ÉùÃ÷Ò»¸ö¶Ô»°¿ò
+	private AlertDialog.Builder dialog;//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
 	private Button button2;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,31 +27,31 @@ public class MainActivity extends Activity {
 		button = (Button) this.findViewById(R.id.button1);
 		button2 = (Button) this.findViewById(R.id.button2);
 		dialog = new AlertDialog.Builder(this);
-		dialog.setTitle("ÌáÊ¾ĞÅÏ¢");
-		dialog.setMessage("ÄúÈ·¶¨ÒªÉ¾³ıÂğ£¿");
+		dialog.setTitle("ï¿½ï¿½Ê¾ï¿½ï¿½Ï¢");
+		dialog.setMessage("ï¿½ï¿½È·ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½");
 		dialog.setIcon(R.drawable.ic_launcher);
-		dialog.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+		dialog.setPositiveButton("È·ï¿½ï¿½", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				Toast toast = Toast.makeText(MainActivity.this, "È·¶¨", Toast.LENGTH_LONG);
+				Toast toast = Toast.makeText(MainActivity.this, "È·ï¿½ï¿½", Toast.LENGTH_LONG);
 				toast.setGravity(Gravity.TOP|Gravity.LEFT,10,10);
 				toast.show();
 			}
 		});
-		dialog.setNegativeButton("È¡Ïû", new DialogInterface.OnClickListener() {
+		dialog.setNegativeButton("È¡ï¿½ï¿½", new DialogInterface.OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				Toast.makeText(MainActivity.this, "È¡Ïû", 1).show();
+				Toast.makeText(MainActivity.this, "È¡ï¿½ï¿½", 1).show();
 			}
 		});
-		dialog.setNeutralButton("ºöÂÔ", new DialogInterface.OnClickListener() {
+		dialog.setNeutralButton("ï¿½ï¿½ï¿½ï¿½", new DialogInterface.OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				Toast.makeText(MainActivity.this, "ºöÂÔ", 1).show();
+				Toast.makeText(MainActivity.this, "ï¿½ï¿½ï¿½ï¿½", 1).show();
 			}
 		});
 		
@@ -63,8 +68,8 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-				builder.setTitle("ÇëÑ¡Ôñ°®ºÃ");
-				final String[] hobbyStrings = {"ÉÏÍø","´òÇò","³ª¸è"};
+				builder.setTitle("ï¿½ï¿½Ñ¡ï¿½ñ°®ºï¿½");
+				final String[] hobbyStrings = {"ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½ï¿½"};
 				builder.setMultiChoiceItems(hobbyStrings, new boolean[]{false,false,false}, new DialogInterface.OnMultiChoiceClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which, boolean isChecked) {
@@ -74,18 +79,18 @@ public class MainActivity extends Activity {
 						}
 					}
 				});
-				builder.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+				builder.setPositiveButton("È·ï¿½ï¿½", new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						Toast.makeText(MainActivity.this, "È·¶¨", 1).show();
+						Toast.makeText(MainActivity.this, "È·ï¿½ï¿½", 1).show();
 					}
 				});
-				builder.setNegativeButton("È¡Ïû", new DialogInterface.OnClickListener() {
+				builder.setNegativeButton("È¡ï¿½ï¿½", new DialogInterface.OnClickListener() {
 					
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						Toast.makeText(MainActivity.this, "È¡Ïû", 1).show();
+						Toast.makeText(MainActivity.this, "È¡ï¿½ï¿½", 1).show();
 					}
 				});
 				builder.show();
