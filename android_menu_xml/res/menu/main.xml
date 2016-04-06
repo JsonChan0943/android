@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/open"
+        android:title="@string/open"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/close"
+        android:title="@string/close"
+        android:showAsAction="never"/>
+    
+     <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        android:showAsAction="never"
+        android:onClick="save"/>
+     
+      <item
+        android:id="@+id/paste"
+        android:title="@string/paste"
+        android:showAsAction="never"/>
+</menu>

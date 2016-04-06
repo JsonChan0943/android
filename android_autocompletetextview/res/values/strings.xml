@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">android_autocompletetextview</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string-array name="cities">
+		<item>hello</item>	    
+		<item>java</item>	    
+		<item>world</item>	    
+		<item>java ee</item>	    
+		<item>java se</item>	    
+		<item>qinshou</item>	    
+		<item>qinaide</item>	    
+	</string-array>
+</resources>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/file"
+        android:title="@string/file">
+        <menu>
+            <item
+		        android:id="@+id/open"
+		        android:title="@string/open"/>
+		
+		    <item
+		        android:id="@+id/close"
+		        android:title="@string/close"/>
+		    
+		     <item
+		        android:id="@+id/save"
+		        android:title="@string/save"/>
+        </menu>
+    </item>
+</menu>
