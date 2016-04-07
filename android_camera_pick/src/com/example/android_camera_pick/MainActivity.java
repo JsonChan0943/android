@@ -1,7 +1,5 @@
 package com.example.android_camera_pick;
 
-import java.net.URI;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,6 +11,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
+/**
+ * Android
+ * @author Administrator
+ *
+ */
 public class MainActivity extends Activity {
 	private Button openCamera,pickPhoto;
 	private ImageView imageView;
@@ -37,7 +40,7 @@ public class MainActivity extends Activity {
 		pickPhoto.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//»ñÈ¡ÕÕÆ¬
+				//ï¿½ï¿½È¡ï¿½ï¿½Æ¬
 				Intent intent = new Intent(Intent.ACTION_PICK,
 						android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 				startActivityForResult(intent, PICK_PHOTO);
